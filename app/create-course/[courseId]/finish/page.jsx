@@ -27,6 +27,8 @@ function FinishScreen({params}) {
   return (
     <div className='px-10 md:px-20 lg:px-44 my-7'>
         <h2 className='text-center font-bold text-2xl my-3 text-primary'>Congrats! Your course is Ready</h2>
+        <h2 className='text-center text-gray-400 border p-2 rounded-lg'>To view your course, please click on the link below</h2>
+        <button className='text-center text-gray-400 border p-2 rounded-lg' onClick={()=>router.push(`/course/${course?.courseId}`)}>Start</button>
        
        
         <CourseBasicInfo course={course} refreshData={()=>console.log()} />
