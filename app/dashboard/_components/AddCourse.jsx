@@ -17,7 +17,7 @@ function AddCourse() {
             <span className='font-bold'>{user?.fullName}</span></h2>
             <p className='text-sm text-gray-500'>Create new course with AI, Share with friends and Earn from it</p>
         </div>
-        <Link href={userCourseList?.length>=5?'https://www.instgramita.com':'/create-course'}>
+        <Link href={userCourseList?.length>=5?'https://ai-cousre-generator.vercel.app':'/create-course'}>
              <Button>+ Create AI Course</Button>
         </Link>
     </div>
